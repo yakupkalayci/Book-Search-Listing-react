@@ -1,11 +1,23 @@
 import React, {useState, useContext} from "react";
-import reactDom from "react-dom";
 import BookSearchContext from "../../context/BookSearchContext";
+import Card from "../Card";
 
 function Header() {
 const context = useContext(BookSearchContext);
 
 const [input, setInput] = useState("");
+
+function filter(input){
+  for(let i=0;i<context.bookData.length;i++){
+
+  if(context.bookData.includes(input) && input != null && input !== ""){
+    
+    return context.bookData;
+    
+  }
+  
+  }
+}
 
   return (
     <div>
@@ -16,9 +28,14 @@ const [input, setInput] = useState("");
         value={input}
       />
 
-      <button type="submit" onClick={() => context.setBookTitle(input)}>
+      <button type="submit" onClick={() => {
+      context.setBookTitle(input);
+      filter(input);
+      }}>
         Ara
       </button>
+      <Card book={filter(input)} />
+     
     </div>
   );
 }
