@@ -36,3 +36,45 @@
     transform: rotate(360deg);
   }
 }
+
+.footer{
+ 
+  
+  height: 45vh;
+
+ background-color: navajowhite;
+
+}
+.layout{
+ margin-top: 5%;
+ margin-left: 10%;
+
+}
+.layout1 {
+
+ background-image: url(./img/bookpreview.png);
+}
+
+.layout2 {
+
+ background-image: url(./img/react.png);
+  
+}
+
+.layout3 {
+
+ background-image: url(./img/googlebooks.png);
+ 
+}
+.yazi{
+
+ z-index: 10;
+ margin-top:55% ;
+}
+
+.card{
+  background-color: black;
+  width: 200px;
+  height: 200px;
+  color:white;
+}
