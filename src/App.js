@@ -10,7 +10,7 @@ function App() {
     <BookSearchContextProvider>
       <div className="App">
         <Header />
-        <Card />
+        
         <Footer />
       </div>
     </BookSearchContextProvider>
