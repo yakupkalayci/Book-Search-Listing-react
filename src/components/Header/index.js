@@ -7,17 +7,17 @@ const context = useContext(BookSearchContext);
 
 const [input, setInput] = useState("");
 
-function filter(input){
-  for(let i=0;i<context.bookData.length;i++){
+// function filter(input){
+//   for(let i=0;i<context.bookData.length;i++){
 
-  if(context.bookData.includes(input) && input != null && input !== ""){
+//   if(context.bookData.includes(input) && input != null && input !== ""){
     
-    return context.bookData;
+//     return context.bookData;
     
-  }
+//   }
   
-  }
-}
+//   }
+// }
 
   return (
     <div>
@@ -30,11 +30,11 @@ function filter(input){
 
       <button type="submit" onClick={() => {
       context.setBookTitle(input);
-      filter(input);
+      // filter(input);
       }}>
         Ara
       </button>
-      <Card book={filter(input)} />
+      {/* <Card book={filter(input)} /> */}
      
     </div>
   );

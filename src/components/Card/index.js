@@ -1,12 +1,18 @@
 import React from 'react'
 
+function Card({img, title, author}) {
 
-
-function Card({book}) {
-    
     return (
-        <div className="card">
-             <p>{book}</p>
+        <div>
+            <div id="cover">
+                <img src={img} />
+            </div>        
+            <div id="title">
+                <h3>{title}</h3>
+            </div>
+            <div id="author">
+                <h3>{author}</h3>
+            </div>
         </div>
     )
 }
