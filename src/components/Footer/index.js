@@ -1,7 +1,7 @@
 import React from 'react'
 import GridLayout from 'react-grid-layout';
 import "./index.css"
-import bookpreview from '../../img/bookpreview.png'
+import github from '../../img/GitHub.jpg'
 import react from '../../img/react.png'
 import googlebooks from '../../img/googlebooks.png'
 function Footer() {
@@ -11,9 +11,9 @@ function Footer() {
           <a className="links" href="https://www.kodluyoruz.org">Kodluyoruz</a>
           <div className="grid-container">
             <div>
-              <a className="links" href="http://tympanus.net/codrops/2014/01/14/look-inside-book-preview-with-bookblock/" target="_blank" rel="noreferrer">
-                <img src={bookpreview}></img>
-                <h3>Book Preview</h3>
+              <a className="links" href="https://github.com/yakupkalayci/Book-Search-Listing-react" target="_blank" rel="noreferrer">
+                <img id="github" src={github}></img>
+                <h3>Github</h3>
               </a>
             </div>
             <div>
