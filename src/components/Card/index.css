@@ -1,0 +1,17 @@
+.bookshelf{
+    position: relative;
+    margin: 40px auto 0;
+    list-style: none;
+    text-align: center;
+}
+
+.buttons a{
+    display: inline-block;
+    padding: 0 8px;
+    color: rgba(100, 105, 106, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.65em;
+    line-height: 1.5;
+    text-decoration: none;
+}
