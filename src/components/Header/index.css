@@ -1,0 +1,74 @@
+.mainHeader{
+    position: relative;
+    margin: 0 auto;
+    padding: 3em 2em;
+    color: rgb(216, 204, 181) ;
+    text-align: center;
+    background: url(https://phonoteka.org/uploads/posts/2021-04/1619565715_14-phonoteka_org-p-fon-dlya-knizhnoi-vistavki-v-biblioteke-18.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.mainText{
+    font-size: 2.625em;
+    line-height: 1.3;
+    margin: 0;
+    font-weight: 450;
+    color: #fff;
+    margin-bottom: 30px; 
+}
+
+.searchMenu{
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.searchMenu:hover{
+    box-shadow: 0 0 .1rem #fff,
+            0 0 .1rem #fff,
+            0 0 1rem #f8de89,
+            0 0 0.8rem #d4f890,
+            0 0 0.8rem #9ca9f1,
+            inset 0 0 0.3rem #eca1da; 
+}
+
+.btnSearch{
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    color: rgb(88, 88, 88);
+    background-color: #fff;
+    border-color: #ccc;
+    display: inline-block;
+    padding: 4px 7px;
+    font-size: 14px;
+    height: 34px;
+    margin-left: 1px;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.btnSearch:hover{
+    background-color:rgb(224, 222, 222); 
+
+}

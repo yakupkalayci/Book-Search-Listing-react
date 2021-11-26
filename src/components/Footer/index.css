@@ -1,0 +1,37 @@
+.footer{
+    text-align: center;
+    background-color: #333;
+    height: auto;
+    color: white;
+}
+
+.footer a{
+    text-decoration: none;
+    display: inline-block;
+    text-align: left;
+    margin: 20px auto;
+    padding: 10px 20px;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    -webkit-backface-visibility: hidden;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 75px;
+}
+
+.links{
+    text-align: left;
+    color: white;
+    font-weight: 300;
+    margin-top: 0.15em;
+}
+
+h3{
+    font-size: 24px;
+}
