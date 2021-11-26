@@ -12,7 +12,7 @@ export const BookSearchContextProvider = ({ children }) => {
       `https://www.googleapis.com/books/v1/volumes?q=${bookTitle.trim() || "dune"}&key=AIzaSyBAz_FUoc12g2XYxo1DBiCPmqE84-s3gxQ`
     );
     const data = await response.json();
-    console.log(data);
+    
 
     setBookData(data.items)
 
