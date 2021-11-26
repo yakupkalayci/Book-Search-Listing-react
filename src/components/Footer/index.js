@@ -9,7 +9,7 @@ function Footer() {
         <div className="footer">
           <span>Created By :</span>
           <a className="links" href="https://www.kodluyoruz.org">Kodluyoruz</a>
-          <div class="grid-container">
+          <div className="grid-container">
             <div>
               <a className="links" href="http://tympanus.net/codrops/2014/01/14/look-inside-book-preview-with-bookblock/" target="_blank" rel="noreferrer">
                 <img src={bookpreview}></img>
