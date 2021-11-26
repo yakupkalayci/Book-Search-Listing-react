@@ -30,31 +30,31 @@ function Card({
       </div>
       <div className="buttons">
         <a target="_blank" href={href}>
-          <Button color="success">İncele</Button>
+          <Button className="bttnBody" >İncele</Button>
         </a>
         {/* <a href="#">Details</a> */}
-        <Button color="success" onClick={toggle}>
+        <Button className="bttnBody"  onClick={toggle}>
           Detay
         </Button>
         <Modal isOpen={modal} toggle={toggle}>
-          <ModalHeader toggle={toggle}>{title}</ModalHeader>
-          <ModalBody>
+          <ModalHeader id="modalHeader" toggle={toggle}>{title}</ModalHeader>
+          <ModalBody id="modalBody">
             <img src={thumbnail} />
-            <h3>Yazar :</h3> {author} <br />
-            <h3>Sayfa Sayısı : </h3> {page} <br />
-            <h3>Kategori : </h3> {category} <br />
-            <h3>Basım Tarihi : </h3> {publishDate} <br />
-            <h3>Açıklama : </h3> {description}
+            <h5>Yazar :</h5> {author} <br />
+            <h5>Sayfa Sayısı : </h5> {page} <br />
+            <h5>Kategori : </h5> {category} <br />
+            <h5>Basım Tarihi : </h5> {publishDate} <br />
+            <h5>Açıklama : </h5> {description}
           </ModalBody>
-          <ModalFooter>
-            <Button color="primary" onClick={toggle}>
+          <ModalFooter id="modalFooter">
+            <Button id="bttn" onClick={toggle}>
               Ok
             </Button>{" "}
           </ModalFooter>
         </Modal>
       </div>
       <div id="title">
-        <a href={href} target="_blank">
+        <a id="yazi" href={href} target="_blank">
           <h3>
             {title} - {author}
           </h3>
