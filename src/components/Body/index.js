@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import BookSearchContext from "../../context/BookSearchContext";
 import Card from "../Card";
+import "./index.css";
 
 function Body() {
   const context = useContext(BookSearchContext);
