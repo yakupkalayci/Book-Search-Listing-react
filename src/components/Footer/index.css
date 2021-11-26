@@ -3,6 +3,7 @@
     background-color: #333;
     height: auto;
     color: white;
+    font-family: cursive;
 }
 
 .footer a{
@@ -34,4 +35,10 @@
 
 h3{
     font-size: 24px;
+    margin-top: 5px;
+}
+
+#github{
+    width: 300px;
+    height: 162px;
 }
