@@ -38,12 +38,7 @@
 }
 
 .footer{
- 
-  
   height: 45vh;
-
- background-color: navajowhite;
-
 }
 .layout{
  margin-top: 5%;
@@ -56,20 +51,15 @@
 }
 
 .layout2 {
-
- background-image: url(./img/react.png);
-  
+  background-image: url(./img/react.png);
 }
 
 .layout3 {
-
- background-image: url(./img/googlebooks.png);
- 
+  background-image: url(./img/googlebooks.png);
 }
 .yazi{
-
- z-index: 10;
- margin-top:55% ;
+  z-index: 10;
+  margin-top:55% ;
 }
 
 .card{

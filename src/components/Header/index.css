@@ -9,14 +9,13 @@
 }
 
 .mainText{
-    font-size: 2.625em;
+    font-size: 2.6em;
     line-height: 1.3;
     margin: 0;
     font-weight: 450;
-    color: rgb(63, 49, 49);
-    margin-bottom: 30px; 
-    font-weight: bolder;
-    font-family: cursive;
+    color: #FFF;
+    margin-bottom: 30px;
+    y: inherit;
     
 }
 
@@ -42,11 +41,11 @@
 
 .searchMenu:hover{
     box-shadow: 0 0 .1rem #fff,
-            0 0 .1rem #fff,
-            0 0 1rem #f8de89,
-            0 0 0.8rem #d4f890,
-            0 0 0.8rem #9ca9f1,
-            inset 0 0 0.3rem #eca1da; 
+        0 0 .1rem #fff,
+        0 0 1rem #f8de89,
+        0 0 0.8rem #d4f890,
+        0 0 0.8rem #9ca9f1,
+        inset 0 0 0.3rem #eca1da; 
 }
 
 .btnSearch{
@@ -69,10 +68,8 @@
     background-image: none;
     border: 1px solid transparent;
     border-radius: 3px;
-   
 }
 
 .btnSearch:hover{
     background-color:rgb(224, 222, 222); 
-
 }

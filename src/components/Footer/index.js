@@ -1,5 +1,4 @@
 import React from 'react'
-import GridLayout from 'react-grid-layout';
 import "./index.css"
 import github from '../../img/GitHub.jpg'
 import react from '../../img/react.png'

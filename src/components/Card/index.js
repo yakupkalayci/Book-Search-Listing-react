@@ -21,10 +21,7 @@ function Card({
       <div className="perspective">
         <div id="cover">
           <img
-            src={
-              img ||
-              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6nBZmN2eqi1bPJmBSiyDqFdcW7WwWextqw&usqp=CAU"
-            }
+            src={ img || "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZ6nBZmN2eqi1bPJmBSiyDqFdcW7WwWextqw&usqp=CAU" }
           />
         </div>
       </div>
@@ -33,7 +30,7 @@ function Card({
           <Button className="bttnBody" >İncele</Button>
         </a>
         {/* <a href="#">Details</a> */}
-        <Button className="bttnBody"  onClick={toggle}>
+        <Button className="bttnBody2" onClick={toggle}>
           Detay
         </Button>
         <Modal isOpen={modal} toggle={toggle}>
@@ -54,10 +51,10 @@ function Card({
         </Modal>
       </div>
       <div id="title">
-        <a id="yazi" href={href} target="_blank">
-          <h3>
+        <a className="titleAuthor" id="yazi" href={href} target="_blank">
+          <h6>
             {title} - {author}
-          </h3>
+          </h6>
         </a>
       </div>
     </div>

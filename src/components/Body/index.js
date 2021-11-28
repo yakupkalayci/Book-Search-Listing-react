@@ -10,6 +10,7 @@ function Body() {
     <div>
       {context.bookData.map((item) => (
         <Card
+        classname="Cards"
           key={item.id}
           img={item.volumeInfo.imageLinks?.thumbnail}
           title={item.volumeInfo.title}
