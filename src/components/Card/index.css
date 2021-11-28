@@ -22,11 +22,14 @@
 #modalBody{
     background-size: 400% 400%;
     font-size: 20px;
-    /* color:rgb(185, 78, 78) ; */
-    color: #706f69;
+   background-color: #e9e8e5;
+    color: #64635e !important;
     font-weight: bolder;
     font-family: 'Times New Roman', Times, serif;
 } 
+#modalFooter, #modalHeader{
+    background-color: #e9e8e5;
+}
 .bttn{
     background-color: #030303;
 }
