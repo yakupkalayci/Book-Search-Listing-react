@@ -7,7 +7,10 @@ function Footer() {
     return (
         <div className="footer">
           <span>Created By :</span>
-          <a className="links" href="https://www.kodluyoruz.org">Kodluyoruz</a>
+          <a className="links" href="https://github.com/yakupkalayci">Yakup KALAYCI</a>
+          <a className="links" href="https://github.com/7Auri">Büşra YEŞİLALİOĞLU</a>
+          <a className="links" href="https://github.com/esincaglakiral">Esin Çağla KIRAL</a>
+          
           <div className="grid-container">
             <div>
               <a className="links" href="https://github.com/yakupkalayci/Book-Search-Listing-react" target="_blank" rel="noreferrer">
