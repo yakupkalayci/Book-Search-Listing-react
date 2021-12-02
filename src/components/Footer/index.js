@@ -7,9 +7,9 @@ function Footer() {
     return (
         <div className="footer">
           <span>Created By :</span>
-          <a className="links" href="https://github.com/yakupkalayci">Yakup KALAYCI</a>
-          <a className="links" href="https://github.com/7Auri">Büşra YEŞİLALİOĞLU</a>
-          <a className="links" href="https://github.com/esincaglakiral">Esin Çağla KIRAL</a>
+          <a className="links" href="https://github.com/yakupkalayci" target="_blank">Yakup KALAYCI</a>
+          <a className="links" href="https://github.com/7Auri" target="_blank">Büşra YEŞİLALİOĞLU</a>
+          <a className="links" href="https://github.com/esincaglakiral" target="_blank">Esin Çağla KIRAL</a>
           
           <div className="grid-container">
             <div>

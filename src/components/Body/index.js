@@ -5,7 +5,7 @@ import "./index.css";
 
 function Body() {
   const context = useContext(BookSearchContext);
-  console.log(context);
+
   return (
     <div>
       {context.bookData.map((item) => (

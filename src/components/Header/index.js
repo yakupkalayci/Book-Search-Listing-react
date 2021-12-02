@@ -20,7 +20,7 @@ const [input, setInput] = useState("");
 
       <button className="btnSearch" type="submit" onClick={() => {
       context.setBookTitle(input);
-      // filter(input);
+      setInput("");
       }}>
         Ara
       </button>

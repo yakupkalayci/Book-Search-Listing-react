@@ -9,7 +9,7 @@ export const BookSearchContextProvider = ({ children }) => {
 
   const fetchData = async() => {
     const response = await fetch(
-      `https://www.googleapis.com/books/v1/volumes?q=${bookTitle.trim() || "dune"}&key=AIzaSyBAz_FUoc12g2XYxo1DBiCPmqE84-s3gxQ`
+      `https://www.googleapis.com/books/v1/volumes?q=${bookTitle.trim() || "harry potter"}&key=AIzaSyBAz_FUoc12g2XYxo1DBiCPmqE84-s3gxQ`
     );
     const data = await response.json();
     
