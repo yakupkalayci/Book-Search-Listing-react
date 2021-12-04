@@ -64,7 +64,7 @@ function Body() {
             Favoriler
           </ModalHeader>
           <ModalBody id="modalBody">
-            {context.favourites.map((fav, index) => <li key={index}>{fav} <Button onClick={() => context.setFavourites("delete", fav)}>Sil</Button></li>)}
+            {context.favourites.map((fav, index) => <li key={index}><a onClick={() => context.setBookTitle(fav)}>{fav}</a> <Button onClick={() => context.setFavourites("delete", fav)}>Sil</Button></li>)}
           </ModalBody>
           <ModalFooter id="modalFooter">
             <Button id="bttn" onClick={toggleModal}>
