@@ -6,21 +6,31 @@ import {
   DropdownItem,
   DropdownMenu,
   DropdownToggle,
+  Modal,
+  ModalHeader,
+  ModalBody,
+  ModalFooter,
+  Button
 } from "reactstrap";
 import "./index.css";
 
 function Body() {
   const context = useContext(BookSearchContext);
 
-  const [dropdown, setDropdown] = useState(false);
-  const toggle = () => setDropdown(!dropdown);
+  const [dropdownSearch, setDropdownSearch] = useState(false);
+  const [modal, setModal] = useState(false);
 
-  console.log(context.storage);
+  const toggleSearches = () => setDropdownSearch(!dropdownSearch);
+  const toggleModal = () => setModal(!modal);
 
   return (
     <div>
       {
-        <Dropdown toggle={toggle} isOpen={dropdown}>
+        <Dropdown
+          toggle={toggleSearches}
+          isOpen={dropdownSearch}
+          style={{ marginBottom: "10px" }}
+        >
           <DropdownToggle caret>Son Aramalar</DropdownToggle>
           <DropdownMenu container="body">
             <DropdownItem
@@ -47,7 +57,22 @@ function Body() {
           </DropdownMenu>
         </Dropdown>
       }
-
+      {<Button onClick={toggleModal}>Favorilerim</Button>}
+      {
+        <Modal isOpen={modal} toggle={toggleModal}>
+          <ModalHeader id="modalHeader" toggle={toggleModal}>
+            Favoriler
+          </ModalHeader>
+          <ModalBody id="modalBody">
+            {context.favourites.map((fav, index) => <li key={index}>{fav} <Button onClick={() => context.setFavourites("delete", fav)}>Sil</Button></li>)}
+          </ModalBody>
+          <ModalFooter id="modalFooter">
+            <Button id="bttn" onClick={toggleModal}>
+              Ok
+            </Button>{" "}
+          </ModalFooter>
+        </Modal>
+      }
       {!context.bookData && (
         <div style={{ margin: "20px 0px" }}>
           <h3>Aradığınız kitap bulunamadı</h3>

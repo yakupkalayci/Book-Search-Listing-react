@@ -1,5 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import { useLocalStorage } from "../hooks/useLocalStorage";
+import { useFavourites } from "../hooks/useFavourites";
 
 const BookSearchContext = createContext();
 
@@ -8,6 +9,8 @@ export const BookSearchContextProvider = ({ children }) => {
   const [bookTitle, setBookTitle] = useState("");
   const [bookData, setBookData] = useState([]);
   const [storage, setStorage] = useLocalStorage("lastSearches", []);
+  const [favourites, setFavourites] = useFavourites();
+
 
   const fetchData = async() => {
     const response = await fetch(
@@ -29,7 +32,9 @@ export const BookSearchContextProvider = ({ children }) => {
     setBookTitle,
     bookData,
     storage,
-    setStorage
+    setStorage,
+    favourites,
+    setFavourites
   };
 
   return (

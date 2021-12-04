@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./index.css";
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from "reactstrap";
+import BookSearchContext from "../../context/BookSearchContext";
 
 function Card({
   img,
@@ -13,6 +14,8 @@ function Card({
   publishDate,
   description,
 }) {
+  const context = useContext(BookSearchContext);
+
   const [modal, setModal] = useState(false);
   const toggle = () => setModal(!modal);
 
@@ -33,6 +36,8 @@ function Card({
         <a target="_blank" href={href}>
           <Button className="bttnBody" >İncele</Button>
         </a>
+        <Button className="bttnBody" onClick={() => context.setFavourites("add", title)}>Add to favs</Button>
+        
 
         <Modal isOpen={modal} toggle={toggle}>
           <ModalHeader id="modalHeader" toggle={toggle}>{title}</ModalHeader>
