@@ -31,7 +31,7 @@ function Body() {
           isOpen={dropdownSearch}
           style={{ marginBottom: "10px" }}
         >
-          <DropdownToggle caret>Son Aramalar</DropdownToggle>
+          <DropdownToggle caret className="arama">Son Aramalar</DropdownToggle>
           <DropdownMenu container="body">
             <DropdownItem
               onClick={() => {
@@ -57,14 +57,14 @@ function Body() {
           </DropdownMenu>
         </Dropdown>
       }
-      {<Button onClick={toggleModal}>Favorilerim</Button>}
+      {<Button onClick={toggleModal} id="fav" >Favorilerim</Button>}
       {
         <Modal isOpen={modal} toggle={toggleModal}>
           <ModalHeader id="modalHeader" toggle={toggleModal}>
             Favoriler
           </ModalHeader>
           <ModalBody id="modalBody">
-            {context.favourites.map((fav, index) => <li key={index}><a onClick={() => context.setBookTitle(fav)}>{fav}</a> <Button onClick={() => context.setFavourites("delete", fav)}>Sil</Button></li>)}
+            {context.favourites.map((fav, index) => <li key={index}><a onClick={() => context.setBookTitle(fav)}>{fav}</a> <Button id="btsil" onClick={() => context.setFavourites("delete", fav)}>Sil</Button></li>)}
           </ModalBody>
           <ModalFooter id="modalFooter">
             <Button id="bttn" onClick={toggleModal}>
