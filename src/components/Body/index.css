@@ -29,6 +29,7 @@ body {
 
 .arama{
     margin-top: 3px;
+    background-color: rgb(95, 93, 91);
 }
 #modalBody li{
     margin-top: 9px;
@@ -47,4 +48,17 @@ body {
 #fav{
     display: flex;
     margin-left: 20px;
+    background-color: rgb(95, 93, 91);
+}
+.favButton{
+    margin-top: 3px;
+    justify-content: center;
+    width: 135px;
+    height: 38px;
+    text-align: center;
+    display: -ms-grid;
+}
+.homeSide{
+    justify-content: center;
+    display: flex;
 }

@@ -14,6 +14,9 @@ import {
 } from "reactstrap";
 import "./index.css";
 
+
+
+
 function Body() {
   const context = useContext(BookSearchContext);
 
@@ -25,6 +28,7 @@ function Body() {
 
   return (
     <div>
+      <div className="homeSide">
       {
         <Dropdown
           toggle={toggleSearches}
@@ -57,7 +61,10 @@ function Body() {
           </DropdownMenu>
         </Dropdown>
       }
-      {<Button onClick={toggleModal} id="fav" >Favorilerim</Button>}
+      {<Button className="favButton" onClick={toggleModal} id="fav" >
+        Favoriler
+        </Button>}
+      </div>
       {
         <Modal isOpen={modal} toggle={toggleModal}>
           <ModalHeader id="modalHeader" toggle={toggleModal}>

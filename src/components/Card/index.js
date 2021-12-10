@@ -2,6 +2,9 @@ import React, { useState, useContext } from "react";
 import "./index.css";
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from "reactstrap";
 import BookSearchContext from "../../context/BookSearchContext";
+import {BsFillHeartFill} from "react-icons/bs"
+
+
 
 function Card({
   img,
@@ -36,7 +39,9 @@ function Card({
         <a target="_blank" href={href}>
           <Button className="bttnBody" >İncele</Button>
         </a>
-        <Button className="bttnBody3" onClick={() => context.setFavourites("add", title)}><span> Favorilere Ekle</span></Button>
+        <Button className="bttnBody3" onClick={() => context.setFavourites("add", title)}><span>
+          <BsFillHeartFill/>
+          </span></Button>
         
 
         <Modal isOpen={modal} toggle={toggle}>
