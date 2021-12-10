@@ -36,7 +36,7 @@ function Card({
         <a target="_blank" href={href}>
           <Button className="bttnBody" >İncele</Button>
         </a>
-        <Button className="bttnBody" onClick={() => context.setFavourites("add", title)}>Add to favs</Button>
+        <Button className="bttnBody3" onClick={() => context.setFavourites("add", title)}><span> Favorilere Ekle</span></Button>
         
 
         <Modal isOpen={modal} toggle={toggle}>
