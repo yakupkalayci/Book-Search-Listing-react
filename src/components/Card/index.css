@@ -51,10 +51,12 @@ h5{
     width: 70px;
     height: 40px;
     color: black;
+   
 }
 #yazi{
     text-decoration: none;
     color:#000;   
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #yazi:hover{
@@ -62,4 +64,20 @@ h5{
 }
 #title{
     margin-top: 7px;
+}
+.bttnBody3{
+    background-color: #e4e1dc;
+    margin-top: 9px;
+    width: 70px;
+    height: 40px;
+    color: black;
+    font-size: 12px;
+   
+    font-weight:500;
+   
+}
+
+.bttnBody3 span{
+    position: relative;
+    bottom:3px;
 }
